@@ -15,7 +15,7 @@ body {
   line-height: 1.5;
 }
 
-//Headings
+// Headings
 h1,
 h2,
 h3 {
@@ -33,25 +33,25 @@ h3 {
   }
 }
 
-//links
+// links
 a {
   color: #fff;
   text-decoration: none;
 }
 
-//Header
+// Header
 header {
   position: fixed;
   z-index: 2;
   width: 100%;
 }
 
-//secondary text
+// secondary text
 .text-secondary {
   color: $secondary-color;
 }
 
-//main
+// main
 main {
   padding: 4rem;
   //height: 100%;
@@ -77,7 +77,7 @@ main {
   }
 }
 
-//about page
+// about page
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -113,7 +113,7 @@ main {
   }
 }
 
-//work/projects page
+// work/projects page
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -131,7 +131,33 @@ main {
   }
 }
 
-//button styles
+// Contact Page
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color:set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
+// button styles
 .btn {
   display: block;
   padding: 0.5rem 1rem;
